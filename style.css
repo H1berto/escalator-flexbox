@@ -1,0 +1,1044 @@
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url(fonts/Poppins-SemiBold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url(fonts/Poppins-Regular.ttf) format('truetype')
+}
+
+body {
+    padding: 0;
+    margin: 0 auto;
+    font-family: Poppins;
+    font-weight: 600;
+}
+
+.main-banner {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 613px;
+    color: white;
+    background-image: url("images/bcg-banner.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.main-banner .bcg-banner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.main-banner .bcg-banner .b-logo img {
+    width: 30%;
+}
+
+.main-banner .bcg-banner .b-title {
+    font-size: 26px;
+    width: 320px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-banner .bcg-banner .btn-banner {
+    background-color: white;
+    width: 150px;
+    height: 41px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #383838;
+    box-shadow: 0 10px 30px black;
+}
+
+.main-banner .bcg-banner .btn-banner p {
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container {
+    max-width: 260px;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.categories .content {
+    margin-top: 1rem;
+    color: white;
+}
+
+.categories .content>div {
+    height: 146px;
+    margin-top: .5rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.categories .content div p:not(:nth-child(4)) {
+    margin-left: 1rem;
+}
+
+.categories .c-top .c-title {
+    margin: 0;
+}
+
+.categories .c-top .c-subtitle {
+    margin: 0;
+}
+
+.categories .c-top {
+    color: #383838;
+    font-weight: bold;
+}
+
+.c-subtitle {
+    font-size: 10px;
+}
+
+.c-title {
+    font-size: 27px;
+    display: flex;
+}
+
+.categories .c-desc {
+    font-size: 10px;
+}
+
+.categories .content .bcg-n {
+    width: 100%;
+    background-image: url("images/bcg-n.png");
+}
+
+.categories .content .bcg-d {
+    width: 100%;
+    background-image: url("images/bcg-d.png");
+}
+
+.categories .content .bcg-t {
+    width: 100%;
+    background-image: url("images/bcg-t.png");
+}
+
+.categories .content .bcg-a {
+    width: 100%;
+    background-image: url("images/bcg-a.png");
+}
+
+.categories .content .bcg-a p {
+    margin-right: 1rem;
+}
+
+.categories .content .bcg-p {
+    width: 100%;
+    background-image: url("images/bcg-p.png");
+}
+
+.plans {
+    background-color: #F4F4F4;
+    margin-top: 4rem;
+}
+
+.plans .container {
+    position: relative;
+    padding: 2rem 0;
+}
+
+.plans .p-top {
+    color: #383838;
+    z-index: 0;
+}
+
+.plans .p-top .p-title {
+    margin: 0;
+    font-size: 27px;
+}
+
+.plans .p-top .p-subtitle {
+    margin: 0;
+    font-size: 10px;
+}
+
+.plans .content {
+    color: white;
+    padding-top: 2rem;
+    position: relative;
+    z-index: 9;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-height: calc(600px + 5rem);
+}
+
+.plans .content div {
+    max-height: 100px;
+    padding: 0;
+}
+
+.plans .content>div:not(:first-child) {
+    margin-top: .5rem;
+}
+
+.plans .content>div>div {
+    flex-flow: row nowrap;
+    flex-direction: row-reverse;
+}
+
+.plans .content div .price {
+    background-color: #005499;
+    padding: 1rem;
+    max-width: 80px;
+}
+
+.plans .content div .price p {
+    margin: 0;
+}
+
+.plans .content div .price .p-title {
+    font-size: 18px;
+}
+
+.plans .content div .desc {
+    padding: 1rem;
+    background-color: #0088ED;
+}
+
+.plans .content div .desc p {
+    margin: 0;
+    max-width: 75px;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.plans .content div .price .p-subtitle {
+    font-size: 10px;
+}
+
+.plans .content div .desc .d-text {
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.plans .content .level_1 .desc {
+    width: 60px;
+}
+
+.plans .content .level_2 .desc {
+    width: 75px;
+}
+
+.plans .content .level_3 .desc {
+    width: 90px;
+}
+
+.plans .content .level_4 .desc {
+    width: 105px;
+}
+
+.plans .content .level_5 .desc {
+    width: 120px;
+}
+
+.plans .content .level_6 .desc {
+    width: 135px;
+}
+
+@media(min-width:400px) {
+    .container {
+        max-width: 340px;
+    }
+    .categories .content>div {
+        height: 146px;
+    }
+    .plans .content div .price {
+        max-width: 120px;
+    }
+    .plans .content .level_1 .desc {
+        width: 100px;
+    }
+    .plans .content .level_2 .desc {
+        width: 122px;
+    }
+    .plans .content .level_3 .desc {
+        width: 144px;
+    }
+    .plans .content .level_4 .desc {
+        width: 166px;
+    }
+    .plans .content .level_5 .desc {
+        width: 188px;
+    }
+    .plans .content .level_6 .desc {
+        width: 210px;
+    }
+}
+
+@media (min-width:480px) and (max-width:720px) {
+    .main-banner .bcg-banner .b-logo img {
+        width: auto;
+    }
+    .main-banner .bcg-banner .b-title {
+        font-size: 32px;
+        width: 360px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-banner .bcg-banner .btn-banner {
+        width: 160px;
+    }
+    .container {
+        max-width: 420px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .c-subtitle {
+        font-size: 12px;
+    }
+    .c-title {
+        font-size: 32px;
+        display: flex;
+    }
+    .content .c-subtitle {
+        font-size: 12px;
+    }
+    .content .c-title {
+        font-size: 27px;
+        display: flex;
+    }
+    .categories .c-desc {
+        font-size: 12px;
+    }
+    .categories .content .bcg-n {
+        width: 32%;
+    }
+    .categories .content .bcg-d {
+        width: calc(68% - .5rem);
+    }
+    .categories .content .bcg-t {
+        width: 100%;
+    }
+    .categories .content .bcg-a {
+        width: calc(68% - .5rem);
+    }
+    .categories .content .bcg-p {
+        width: 32%;
+    }
+    .plans .p-top .p-title {
+        margin: 0;
+        font-size: 32px;
+    }
+    .plans .p-top .p-subtitle {
+        margin: 0;
+        font-size: 12px;
+    }
+    .plans .content div .price {
+        max-width: 120px;
+    }
+    .plans .content div .price .p-title {
+        font-size: 18px;
+    }
+    .plans .content div .price .p-subtitle {
+        font-size: 12px;
+    }
+    .plans .content div .desc .d-text {
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .plans .content .level_1 .desc {
+        width: 100px;
+    }
+    .plans .content .level_2 .desc {
+        width: 140px;
+    }
+    .plans .content .level_3 .desc {
+        width: 180px;
+    }
+    .plans .content .level_4 .desc {
+        width: 220px;
+    }
+    .plans .content .level_5 .desc {
+        width: 260px;
+    }
+    .plans .content .level_6 .desc {
+        width: 295px;
+    }
+}
+
+@media (min-width:720px) and (max-width:900px) {
+    .main-banner .bcg-banner .b-logo img {
+        width: auto;
+    }
+    .main-banner .bcg-banner .b-title {
+        font-size: 42px;
+        width: 460px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-banner .bcg-banner .btn-banner {
+        width: 190px;
+    }
+    .c-subtitle {
+        font-size: 14px;
+    }
+    .c-title {
+        font-size: 36px;
+        display: flex;
+    }
+    .categories .c-desc {
+        font-size: 14px;
+    }
+    .container {
+        max-width: 660px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .categories .content>div {
+        height: 186px;
+        margin-top: 1rem;
+    }
+    .categories .content .bcg-n {
+        width: 32%;
+    }
+    .categories .content .bcg-d {
+        width: calc(68% - 1rem);
+    }
+    .categories .content .bcg-t {
+        width: 100%;
+    }
+    .categories .content .bcg-a {
+        width: calc(68% - 1rem);
+    }
+    .categories .content .bcg-p {
+        width: 32%;
+    }
+    .plans .container {
+        padding: 4rem 0;
+    }
+    .plans .p-top {
+        position: absolute;
+        z-index: 0;
+    }
+    .plans .p-top .p-title {
+        margin: 0;
+        font-size: 36px;
+    }
+    .plans .p-top .p-subtitle {
+        margin: 0;
+        font-size: 14px;
+    }
+    .plans .content {
+        padding-top: 0;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-height: auto;
+    }
+    .plans .content div {
+        max-height: none;
+        max-width: 100px;
+    }
+    .plans .content>div:not(:first-child) {
+        margin-top: 0;
+    }
+    .plans .content>div>div {
+        flex-flow: column nowrap;
+        flex-direction: column;
+    }
+    .plans .content div .price {
+        max-width: none;
+    }
+    .plans .content div .desc p {
+        margin: 0;
+        max-width: 75px;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+    }
+    .plans .content .level_1 .desc {
+        height: 77px;
+        width: 60px;
+    }
+    .plans .content .level_2 .desc {
+        height: 127px;
+        width: 60px;
+    }
+    .plans .content .level_3 .desc {
+        height: 187px;
+        width: 60px;
+    }
+    .plans .content .level_4 .desc {
+        height: 237px;
+        width: 60px;
+    }
+    .plans .content .level_5 .desc {
+        height: 287px;
+        width: 60px;
+    }
+    .plans .content .level_6 .desc {
+        height: 337px;
+        width: 60px;
+    }
+}
+
+@media (min-width:900px) and (max-width:1024px) {
+    .main-banner .bcg-banner .b-logo img {
+        width: auto;
+    }
+    .main-banner .bcg-banner .b-title {
+        font-size: 52px;
+        width: 580px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-banner .bcg-banner .btn-banner {
+        background-color: white;
+        width: 220px;
+        height: 41px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #383838;
+        box-shadow: 0 10px 30px black;
+    }
+    .main-banner .bcg-banner .btn-banner p {
+        text-decoration: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .container {
+        max-width: 820px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .categories .content {
+        margin-top: 1rem;
+        color: white;
+    }
+    .categories .content>div {
+        height: 256px;
+        margin-top: 1.5rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .categories .content div p:not(:nth-child(4)) {
+        margin-left: 1.5rem;
+    }
+    .categories .c-top .c-title {
+        margin: 0;
+    }
+    .categories .c-top .c-subtitle {
+        margin: 0;
+    }
+    .categories .c-top {
+        color: #383838;
+        font-weight: bold;
+    }
+    .c-subtitle {
+        font-size: 18px;
+    }
+    .c-title {
+        font-size: 47px;
+        display: flex;
+    }
+    .categories .c-desc {
+        font-size: 16px;
+    }
+    .categories .content .bcg-n {
+        width: 32%;
+    }
+    .categories .content .bcg-d {
+        width: calc(68% - 1.5rem);
+    }
+    .categories .content .bcg-t {
+        width: 100%;
+    }
+    .categories .content .bcg-a {
+        width: calc(68% - 1.5rem);
+    }
+    .categories .content .bcg-a p {
+        margin-right: 1.5rem;
+    }
+    .categories .content .bcg-p {
+        width: 32%;
+    }
+    .plans .container {
+        padding: 4rem 0;
+    }
+    .plans .p-top {
+        position: absolute;
+        z-index: 0;
+    }
+    .plans .p-top .p-title {
+        margin: 0;
+        font-size: 47px;
+    }
+    .plans .p-top .p-subtitle {
+        margin: 0;
+        font-size: 18px;
+    }
+    .plans .content {
+        padding-top: 0;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-height: none;
+    }
+    .plans .content div {
+        padding: 0;
+        max-height: none;
+        max-width: 90px;
+    }
+    .plans .content>div:not(:first-child) {
+        margin-top: 0;
+    }
+    .plans .content>div>div {
+        flex-flow: column nowrap;
+        flex-direction: column;
+    }
+    .plans .content div .price {
+        max-width: none;
+        width: 100%;
+    }
+    .plans .content div .desc p {
+        margin: 0;
+        max-width: 100%;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+    }
+    .plans .content div .price .p-title {
+        font-size: 24px;
+    }
+    .plans .content div .price .p-subtitle {
+        font-size: 14px;
+    }
+    .plans .content div .desc .d-text {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .plans .content .level_1 .desc {
+        height: 77px;
+    }
+    .plans .content .level_2 .desc {
+        height: 127px;
+    }
+    .plans .content .level_3 .desc {
+        height: 187px;
+    }
+    .plans .content .level_4 .desc {
+        height: 237px;
+    }
+    .plans .content .level_5 .desc {
+        height: 287px;
+    }
+    .plans .content .level_6 .desc {
+        height: 337px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1200px) {
+    .main-banner .bcg-banner .b-logo img {
+        width: auto;
+    }
+    .main-banner .bcg-banner .b-title {
+        font-size: 57px;
+        width: 630px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-banner .bcg-banner .btn-banner {
+        background-color: white;
+        width: 220px;
+        height: 41px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #383838;
+        box-shadow: 0 10px 30px black;
+    }
+    .main-banner .bcg-banner .btn-banner p {
+        text-decoration: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .container {
+        max-width: 944px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .categories .content {
+        margin-top: 1rem;
+        color: white;
+    }
+    .categories .content>div {
+        height: 300px;
+        margin-top: 1.5rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .categories .content div p:not(:nth-child(4)) {
+        margin-left: 1.5rem;
+    }
+    .categories .c-top .c-title {
+        margin: 0;
+    }
+    .categories .c-top .c-subtitle {
+        margin: 0;
+    }
+    .categories .c-top {
+        color: #383838;
+        font-weight: bold;
+    }
+    .c-subtitle {
+        font-size: 18px;
+    }
+    .c-title {
+        font-size: 50px;
+        display: flex;
+    }
+    .categories .c-desc {
+        font-size: 18px;
+    }
+    .categories .content .bcg-n {
+        width: 32%;
+    }
+    .categories .content .bcg-d {
+        width: calc(68% - 1.5rem);
+    }
+    .categories .content .bcg-t {
+        width: 100%;
+    }
+    .categories .content .bcg-a {
+        width: calc(68% - 1.5rem);
+    }
+    .categories .content .bcg-a p {
+        margin-right: 1.5rem;
+    }
+    .categories .content .bcg-p {
+        width: 32%;
+    }
+    .plans .container {
+        padding: 4rem 0;
+    }
+    .plans .p-top {
+        position: absolute;
+        z-index: 0;
+    }
+    .plans .p-top .p-title {
+        margin: 0;
+        font-size: 50px;
+    }
+    .plans .p-top .p-subtitle {
+        margin: 0;
+        font-size: 18px;
+    }
+    .plans .content {
+        padding-top: 0;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-height: none;
+    }
+    .plans .content div {
+        max-height: none;
+        max-width: 110px;
+    }
+    .plans .content>div>div {
+        flex-flow: column nowrap;
+        flex-direction: column;
+    }
+    .plans .content div .price {
+        width: 100%;
+    }
+    .plans .content div .desc p {
+        margin: 0;
+        max-width: 100%;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+    }
+    .plans .content div .price .p-title {
+        font-size: 24px;
+    }
+    .plans .content div .price .p-subtitle {
+        font-size: 14px;
+    }
+    .plans .content div .desc .d-text {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .plans .content .level_1 .desc {
+        height: 77px;
+        width: 100%;
+    }
+    .plans .content .level_2 .desc {
+        height: 127px;
+    }
+    .plans .content .level_3 .desc {
+        height: 187px;
+    }
+    .plans .content .level_4 .desc {
+        height: 237px;
+    }
+    .plans .content .level_5 .desc {
+        height: 287px;
+    }
+    .plans .content .level_6 .desc {
+        height: 337px;
+    }
+}
+
+@media(min-width:1200px) {
+    .main-banner .bcg-banner .b-logo img {
+        width: auto;
+    }
+    .main-banner .bcg-banner .b-title {
+        font-size: 62px;
+        width: 678px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .main-banner .bcg-banner .btn-banner {
+        background-color: white;
+        width: 245px;
+        height: 51px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #383838;
+        box-shadow: 0 10px 30px black;
+    }
+    .main-banner .bcg-banner .btn-banner p {
+        text-decoration: none;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+        padding-top: 2rem;
+    }
+    .categories .content {
+        margin-top: 1rem;
+        color: white;
+    }
+    .categories .content>div {
+        height: 346px;
+        margin-top: 2rem;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .categories .content div p:not(:nth-child(4)) {
+        margin-left: 2rem;
+    }
+    .categories .c-top .c-title {
+        margin: 0;
+    }
+    .categories .c-top .c-subtitle {
+        margin: 0;
+    }
+    .categories .c-top {
+        color: #383838;
+        font-weight: bold;
+    }
+    .c-subtitle {
+        font-size: 21px;
+    }
+    .c-title {
+        font-size: 52px;
+        display: flex;
+    }
+    .categories .c-desc {
+        font-size: 20px;
+    }
+    .categories .content .bcg-n {
+        width: 32%;
+        background-image: url("images/bcg-n.png");
+    }
+    .categories .content .bcg-d {
+        width: calc(68% - 2rem);
+        background-image: url("images/bcg-d.png");
+    }
+    .categories .content .bcg-t {
+        width: 100%;
+        background-image: url("images/bcg-t.png");
+    }
+    .categories .content .bcg-a {
+        width: calc(68% - 2rem);
+        background-image: url("images/bcg-a.png");
+    }
+    .categories .content .bcg-a p {
+        margin-right: 2rem;
+    }
+    .categories .content .bcg-p {
+        width: 32%;
+        background-image: url("images/bcg-p.png");
+    }
+    .plans .container {
+        padding: 4rem 0;
+    }
+    .plans .p-top {
+        position: absolute;
+        z-index: 0;
+    }
+    .plans .p-top .p-title {
+        margin: 0;
+        font-size: 52px;
+    }
+    .plans .p-top .p-subtitle {
+        margin: 0;
+        font-size: 18px;
+    }
+    .plans .content {
+        padding-top: 0;
+        flex-flow: row wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-height: none;
+    }
+    .plans .content div {
+        max-height: none;
+        max-width: none;
+        width: 170px;
+    }
+    .plans .content>div>div {
+        flex-flow: column nowrap;
+        flex-direction: column;
+    }
+    .plans .content div .price {
+        max-width: none;
+        width: 100%;
+        padding: 0;
+        height: 98px;
+    }
+    .plans .content div .desc {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .plans .content div .desc p {
+        max-width: none;
+        width: 120px;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+    }
+    .plans .content div .price .p-title {
+        font-size: 34px;
+        padding-top: .5rem;
+        padding-left: 1rem;
+    }
+    .plans .content div .price .p-subtitle {
+        padding-left: 1rem;
+        font-size: 20px;
+    }
+    .plans .content div .desc .d-text {
+        font-size: 10px;
+        font-weight: 400;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+    }
+    .plans .content .level_1 .desc {
+        height: 77px;
+        width: 100%;
+    }
+    .plans .content .level_2 .desc {
+        height: 127px;
+        width: 100%;
+    }
+    .plans .content .level_3 .desc {
+        height: 187px;
+        width: 100%;
+    }
+    .plans .content .level_4 .desc {
+        height: 237px;
+        width: 100%;
+    }
+    .plans .content .level_5 .desc {
+        height: 287px;
+        width: 100%;
+    }
+    .plans .content .level_6 .desc {
+        height: 337px;
+        width: 100%;
+    }
+}
+
+
+/* Flex */
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+
+.flex-start {
+    justify-content: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.row-nowrap {
+    flex-flow: row nowrap;
+}
+
+.column-nowrap {
+    flex-flow: column nowrap;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.row-wrap {
+    flex-flow: row wrap;
+}
+
+.item {
+    flex: 1;
+}
+
+.tc {
+    text-align: center;
+}
+
+.vm {
+    vertical-align: middle;
+}
+
+
+/* Media querys */
